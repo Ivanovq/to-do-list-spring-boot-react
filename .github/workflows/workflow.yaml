@@ -3,7 +3,7 @@ name: Docker Build and Push
 on:
   push:
     branches:
-      - main   # Или твојата главна грана
+      - master
 
 jobs:
   build-and-push:
