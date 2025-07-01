@@ -15,7 +15,7 @@ services:
       context: ./backend
     container_name: backend
     ports:
-      - "3001:3001"   # според Dockerfile-от што го имаш за backend
+      - "3001:3001"   
     depends_on:
       - mongo
     environment:
@@ -26,7 +26,7 @@ services:
       context: ./frontend
     container_name: frontend
     ports:
-      - "3000:80"    # nginx работи на 80-та порта, map-ирана на 3000
+      - "3000:80"   
     depends_on:
       - backend
 
